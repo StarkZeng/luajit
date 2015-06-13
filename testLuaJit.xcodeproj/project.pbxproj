@@ -6,20 +6,111 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D17C1C9A1B2BC895004B097B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D17C1C991B2BC895004B097B /* AppDelegate.m */; };
+		D17C1C9D1B2BC895004B097B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D17C1C9C1B2BC895004B097B /* ViewController.m */; };
+		D17C1CB91B2BC955004B097B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D17C1CB81B2BC955004B097B /* Info.plist */; };
+		D17C1CBB1B2BC97D004B097B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D17C1CBA1B2BC97D004B097B /* main.m */; };
+		D17C1CBD1B2BCA26004B097B /* libluajit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D17C1CBC1B2BCA26004B097B /* libluajit.a */; };
+		D17C1CC61B2BD5AC004B097B /* test.lua in Resources */ = {isa = PBXBuildFile; fileRef = D17C1CC51B2BD5AC004B097B /* test.lua */; };
+		D17C1CC91B2BDB82004B097B /* test.obj in Frameworks */ = {isa = PBXBuildFile; fileRef = D17C1CC71B2BDB82004B097B /* test.obj */; };
+		D17C1CCA1B2BDB82004B097B /* test.out in Resources */ = {isa = PBXBuildFile; fileRef = D17C1CC81B2BDB82004B097B /* test.out */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D17C1C8B1B2BC6A9004B097B /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		D17C1C911B2BC895004B097B /* luajit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = luajit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D17C1C981B2BC895004B097B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D17C1C991B2BC895004B097B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D17C1C9B1B2BC895004B097B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D17C1C9C1B2BC895004B097B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D17C1CB81B2BC955004B097B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		D17C1CBA1B2BC97D004B097B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D17C1CBC1B2BCA26004B097B /* libluajit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libluajit.a; path = prebuilt/ios/libluajit.a; sourceTree = "<group>"; };
+		D17C1CC51B2BD5AC004B097B /* test.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.lua; sourceTree = "<group>"; };
+		D17C1CC71B2BDB82004B097B /* test.obj */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = test.obj; sourceTree = "<group>"; };
+		D17C1CC81B2BDB82004B097B /* test.out */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.out; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D17C1C8E1B2BC895004B097B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17C1CBD1B2BCA26004B097B /* libluajit.a in Frameworks */,
+				D17C1CC91B2BDB82004B097B /* test.obj in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		D17C1C831B2BC481004B097B = {
 			isa = PBXGroup;
 			children = (
+				D17C1CBC1B2BCA26004B097B /* libluajit.a */,
+				D17C1C8B1B2BC6A9004B097B /* include */,
+				D17C1C931B2BC895004B097B /* luajit */,
+				D17C1C921B2BC895004B097B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		D17C1C921B2BC895004B097B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D17C1C911B2BC895004B097B /* luajit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D17C1C931B2BC895004B097B /* luajit */ = {
+			isa = PBXGroup;
+			children = (
+				D17C1CC71B2BDB82004B097B /* test.obj */,
+				D17C1CC81B2BDB82004B097B /* test.out */,
+				D17C1CC51B2BD5AC004B097B /* test.lua */,
+				D17C1CBA1B2BC97D004B097B /* main.m */,
+				D17C1CB81B2BC955004B097B /* Info.plist */,
+				D17C1C981B2BC895004B097B /* AppDelegate.h */,
+				D17C1C991B2BC895004B097B /* AppDelegate.m */,
+				D17C1C9B1B2BC895004B097B /* ViewController.h */,
+				D17C1C9C1B2BC895004B097B /* ViewController.m */,
+			);
+			path = luajit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D17C1C901B2BC895004B097B /* luajit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D17C1CB21B2BC895004B097B /* Build configuration list for PBXNativeTarget "luajit" */;
+			buildPhases = (
+				D17C1C8D1B2BC895004B097B /* Sources */,
+				D17C1C8E1B2BC895004B097B /* Frameworks */,
+				D17C1C8F1B2BC895004B097B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = luajit;
+			productName = luajit;
+			productReference = D17C1C911B2BC895004B097B /* luajit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D17C1C841B2BC481004B097B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					D17C1C901B2BC895004B097B = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
 			};
 			buildConfigurationList = D17C1C871B2BC481004B097B /* Build configuration list for PBXProject "testLuaJit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -27,14 +118,43 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D17C1C831B2BC481004B097B;
+			productRefGroup = D17C1C921B2BC895004B097B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				D17C1C901B2BC895004B097B /* luajit */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D17C1C8F1B2BC895004B097B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17C1CCA1B2BDB82004B097B /* test.out in Resources */,
+				D17C1CB91B2BC955004B097B /* Info.plist in Resources */,
+				D17C1CC61B2BD5AC004B097B /* test.lua in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D17C1C8D1B2BC895004B097B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17C1C9D1B2BC895004B097B /* ViewController.m in Sources */,
+				D17C1CBB1B2BC97D004B097B /* main.m in Sources */,
+				D17C1C9A1B2BC895004B097B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		D17C1C881B2BC481004B097B /* Debug */ = {
@@ -49,6 +169,104 @@
 			};
 			name = Release;
 		};
+		D17C1CB31B2BC895004B097B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/prebuilt/ios",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D17C1CB41B2BC895004B097B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/prebuilt/ios",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -60,6 +278,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D17C1CB21B2BC895004B097B /* Build configuration list for PBXNativeTarget "luajit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D17C1CB31B2BC895004B097B /* Debug */,
+				D17C1CB41B2BC895004B097B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
